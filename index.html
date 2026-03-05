@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Sunshine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🌻 Sunshine</h1>
+
+<div class="container">
+
+<div class="inputs">
+
+<div>
+<label>Estudo</label>
+<input id="studyTime" type="number" value="25">
+</div>
+
+<div>
+<label>Descanso</label>
+<input id="breakTime" type="number" value="5">
+</div>
+
+</div>
+
+<div id="message"></div>
+
+<div id="timer">25:00</div>
+
+<div class="buttons">
+
+<button onclick="startStudy()">📚 Estudar</button>
+
+<button onclick="startBreak()">☕ Descanso</button>
+
+<button id="playPause" onclick="toggleTimer()">▶</button>
+
+<button onclick="resetTimer()">🔄</button>
+
+</div>
+
+</div>
+
+<audio id="music" loop>
+<source src="https://cdn.pixabay.com/audio/2022/03/15/audio_c8c8a73467.mp3">
+</audio>
+
+<!-- gato estudando -->
+<img class="cat" src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif">
+
+<script src="script.js"></script>
+
+</body>
+</html>
